@@ -21,13 +21,14 @@
       <nav>
         <h1><a href="/">Restaurant Reviews</a></h1>
       </nav>
+      <a href="#main" class="skip">Skip map to main content</a>
     </header>
 
     <main id="maincontent">
       <section id="map-container">
         <div id="map"></div>
       </section>
-      <section>
+      <section id="main">
         <div class="filter-options">
           <h2>Filter Results</h2>
           <select
@@ -63,6 +64,19 @@
       charset="utf-8"
       src="js/main.js"
     ></script>
+    <!-- service worker -->
+    <script>
+      if (!navigator.serviceWorker) {
+      }
+      navigator.serviceWorker
+        .register("/sw.js")
+        .then(function () {
+          console.log("Service worker registered");
+        })
+        .catch(function () {
+          console.log("Registration failed");
+        });
+    </script>
     <!-- <script
       async
       defer

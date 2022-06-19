@@ -303,11 +303,18 @@ nav h1 a {
 #reviews-list li p {
   margin: 0 0 10px;
 }
-/* #restaurant-hours {
-} */
+
 #restaurant-hours td {
   color: #666;
   overflow-wrap: break-word;
+}
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 443px) {
