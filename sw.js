@@ -1,7 +1,6 @@
 self.addEventListener("install", function (event) {
   const urlsToCache = [
     "/",
-    "/restaurant.html",
     "js/main.js",
     "js/restaurant_info.js",
     "css/styles.css",
